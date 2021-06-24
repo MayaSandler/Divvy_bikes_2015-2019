@@ -13,7 +13,7 @@ def preprocessing_stations():
     stations_2015['online_date'] = '01/01/2015'
     stations_2015['online_date'] = pd.to_datetime(stations_2015['online_date'])
     stations_2015['city'] = None
-    stations_2015 = stations_2015[['id', 'name', 'city', 'latitude', 'longitude', 'dpcapacity', 'online_date']]          
+    stations_2015 = stations_2015[['id', 'name', 'city', 'latitude', 'longitude', 'dpcapacity', 'online_date']]        
 
     print('******* station 2016_1 *********')
     stations_2016_1 = pd.read_csv('Divvy_Stations_2016_Q1Q2.csv')
